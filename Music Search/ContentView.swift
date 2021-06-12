@@ -24,7 +24,7 @@ struct ContentView: View {
                     .listStyle(PlainListStyle())
                 }
             }
-            .navigationBarTitle("Music Search")
+            .navigationBarTitle("iTunes")
         }
     }
 }
@@ -34,14 +34,14 @@ struct EmptyStateView: View {
         VStack() {
             Spacer()
             Image(systemName: "music.note")
-                .font(.system(size: 85))
+                .font(.title)
                 .padding(.bottom)
             Text("Start searching for music")
-                .font(.title)
+                .font(.title3)
             Spacer()
         }
         .padding()
-        .foregroundColor(Color(.systemIndigo))
+        .foregroundColor(.secondary)
     }
 }
 
